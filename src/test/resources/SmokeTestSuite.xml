@@ -3,44 +3,6 @@
 
 
 <suite name="Smoke Test Suite">
-    <!--	<listeners>-->
-    <!--		<listener class-name="util.ExtentReportListener" />-->
-    <!--	</listeners>-->
-    <test name="Smoke Test">
-        <classes>
-            <class name="tests.LoginPageTest">
-                <methods>
-                    <include name="verifyLogin">
-                        <parameter name="username" value="alexandrabarboni@semicolon.com"/>
-                        <parameter name="password" value="yrEpJyuu"/>
-                    </include>
-                    <include name="verifyCreateAccount">
-                        <parameter name="firstName" value="Admin12121"/>
-                        <parameter name="lastName" value="admin123"/>
-                        <parameter name="email" value="test@yahoo.com"/>
-                        <parameter name="password" value="parola122345"/>
-                    </include>
-                </methods>
-            </class>
-            <!--			<class name="tests.MyInfoTest" >-->
-            <!--				<methods>-->
-            <!--					<include name="login">-->
-            <!--						<parameter name="username" value="Admin" />-->
-            <!--						<parameter name="password" value="admin123" />-->
-            <!--					</include>-->
-            <!--					<include name="myInfoPage">-->
-            <!--						<parameter name="name" value="Alex" />-->
-            <!--						<parameter name="lastname" value="Popoescu" />-->
-            <!--						<parameter name="license" value="B0938874873" />-->
-            <!--						<parameter name="nationality" value="Romanian" />-->
-            <!--						<parameter name="maritalStatus" value="Single" />-->
-            <!--						<parameter name="gender" value="Male" />-->
-            <!--						<parameter name="bloodType" value="A+" />-->
-            <!--						<parameter name="typeOfRunning" value="local" />-->
-            <!--					</include>-->
-            <!--				</methods>-->
-            <!--			</class>-->
-        </classes>
-    </test>
+
 
 </suite>
