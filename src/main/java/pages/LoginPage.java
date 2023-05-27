@@ -6,7 +6,10 @@ import org.openqa.selenium.support.FindBy;
 
 public class LoginPage extends BaseTest {
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 3b52f1c (Tenma ContApp)
     @FindBy(xpath = "//input[@name='username']")
     private WebElement emailAddress;
 
@@ -35,11 +38,19 @@ public class LoginPage extends BaseTest {
     private WebElement buttonCreateAccount;
 
     public void addUserName(String username) {
+<<<<<<< HEAD
         addText(username, emailAddress);
     }
 
     public void addUserPassword(String userpassword) {
         addText(userpassword, emailPassword);
+=======
+        addText(emailAddress, username);
+    }
+
+    public void addUserPassword(String userpassword) {
+        addText(emailPassword, userpassword);
+>>>>>>> 3b52f1c (Tenma ContApp)
     }
 
     public void clickLoginButton() {
@@ -54,6 +65,7 @@ public class LoginPage extends BaseTest {
                                    String email,
                                    String password) {
 
+<<<<<<< HEAD
         addText(firstName, this.firstName);
         addText(lastName, this.lastName);
         addText(email, this.email);
@@ -61,4 +73,12 @@ public class LoginPage extends BaseTest {
         click(buttonCreateAccount);
     }
 
+=======
+        addText(this.firstName, firstName);
+        addText(this.lastName, lastName);
+        addText(this.email, email);
+        addText(this.password, password);
+        click(buttonCreateAccount);
+    }
+>>>>>>> 3b52f1c (Tenma ContApp)
 }
