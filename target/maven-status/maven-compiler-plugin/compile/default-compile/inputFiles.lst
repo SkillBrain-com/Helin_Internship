@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-C:\Users\gabri\OneDrive\Documente\GitHub\Helin_Internship\src\main\java\pages\BasePage.java
-C:\Users\gabri\OneDrive\Documente\GitHub\Helin_Internship\src\main\java\base\BaseTest.java
-=======
 C:\Users\gabri\OneDrive\Documente\GitHub\Helin_Internship\src\main\java\base\LoginContAppTest.java
 C:\Users\gabri\OneDrive\Documente\GitHub\Helin_Internship\src\main\java\pages\LoginContApp.java
 C:\Users\gabri\OneDrive\Documente\GitHub\Helin_Internship\src\main\java\util\ExtentReportListener.java
@@ -11,4 +7,3 @@ C:\Users\gabri\OneDrive\Documente\GitHub\Helin_Internship\src\main\java\base\Bas
 C:\Users\gabri\OneDrive\Documente\GitHub\Helin_Internship\src\main\java\pages\LoginPage.java
 C:\Users\gabri\OneDrive\Documente\GitHub\Helin_Internship\src\main\java\base\LoginPageTest.java
 C:\Users\gabri\OneDrive\Documente\GitHub\Helin_Internship\src\main\java\tests\MyInfoTest.java
->>>>>>> bec3cec (Modificari)
