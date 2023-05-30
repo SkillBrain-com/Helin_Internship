@@ -1,5 +1,7 @@
 package base;
 
+import org.jetbrains.annotations.Contract;
+import org.jetbrains.annotations.NotNull;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -19,7 +21,8 @@ public class BaseTest {
         action = new Actions(driver);
     }
 
-    private WebDriverWait waitElement(){
+    @Contract(" -> new")
+    private @NotNull WebDriverWait waitElement(){
         return new WebDriverWait(driver,15);
     }
 

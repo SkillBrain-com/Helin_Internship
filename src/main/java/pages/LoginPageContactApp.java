@@ -40,11 +40,11 @@ public class LoginPageContactApp extends BaseTest {
     };
 
     public void addEmail(String email) {
-        addText(email, emailField);
+        addText(emailField, email);
     }
 
     public void addPassword(String password) {
-        addText(password, passwordField);
+        addText(passwordField, password);
     }
 
     public void clickRememberMeCheckbox() {
