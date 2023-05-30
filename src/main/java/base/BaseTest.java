@@ -11,6 +11,8 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import pages.BasePage;
 
+import java.time.Duration;
+
 
 public class BaseTest {
     protected WebDriver driver;
@@ -21,11 +23,10 @@ public class BaseTest {
         action = new Actions(driver);
     }
 
-    @Contract(" -> new")
-    private @NotNull WebDriverWait waitElement(){
-        return new WebDriverWait(driver,15);
-    }
 
+    private  WebDriverWait waitElement(){
+        return new WebDriverWait(driver, Duration.ofSeconds(15));
+    }
     protected WebElement find(WebElement locator) {
         waitElement().until(ExpectedConditions.visibilityOf(locator));
         return locator;
