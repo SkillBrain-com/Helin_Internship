@@ -44,8 +44,6 @@ public class LoginPage extends BaseTest {
     public void addUserPassword(String userpassword) {
         addText(emailPassword, userpassword);
 
-
-
     }
 
 

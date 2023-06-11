@@ -11,7 +11,8 @@ import org.testng.annotations.BeforeMethod;
 
 public class BasePage {
     public static WebDriver driverLocal;
-    String url = "https://semicolon-task-manager-skillbrains-grxarv6yb-cezarmocanu.vercel.app/login";
+   // String url = "https://semicolon-task-manager-skillbrains-grxarv6yb-cezarmocanu.vercel.app/login";
+    String url ="https://account.contapp.ro/login";
     public static ExtentReports reports;
     public static ExtentTest logger;
 

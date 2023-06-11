@@ -15,17 +15,17 @@ import java.time.Duration;
 
 
 public class BaseTest {
-    protected WebDriver driver;
+    public WebDriver driver;
     Actions action;
     public BaseTest() {
         driver = BasePage.driverLocal;
         PageFactory.initElements(driver,this);
-        action = new Actions(driver);
+        action=new Actions(driver);
     }
 
 
     private  WebDriverWait waitElement(){
-        return new WebDriverWait(driver, Duration.ofSeconds(15));
+        return new WebDriverWait(driver,15);
     }
     protected WebElement find(WebElement locator) {
         waitElement().until(ExpectedConditions.visibilityOf(locator));
@@ -59,7 +59,7 @@ public class BaseTest {
         return driver.getTitle();
     }
 
-    protected String getUrl(){
+    public String getUrl(){
         return driver.getCurrentUrl();
     }
 

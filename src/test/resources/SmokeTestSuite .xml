@@ -4,7 +4,7 @@
 
 <suite name="Smoke Test Suite">
 	<listeners>
-		<listener class-name="util.ExtentReportListener" />
+<!--		<listener class-name="util.ExtentReportListener" />-->
 	</listeners>
 	<test name="Smoke Test">
 		<classes>
@@ -15,8 +15,13 @@
 						<parameter name="password" value="admin123" />
 						<parameter name="typeOfRunning" value="remote" />
 					</include>
+					<include name="verifyLogin">
+						<parameter name="username" value="gabrielajitea77@gmail.com" />
+						<parameter name="password" value="Rozaroza69" />
+						<parameter name="typeOfRunning" value="remote" />
+					</include>
 					<include name="negativeLoginIn">
-						<parameter name="username" value="Admin12121" />
+						<parameter name="username" value="Admin" />
 						<parameter name="password" value="admin123" />
 						<parameter name="typeOfRunning" value="remote" />
 					</include>

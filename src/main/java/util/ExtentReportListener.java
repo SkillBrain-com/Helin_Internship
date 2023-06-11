@@ -1,5 +1,3 @@
 package util;
 
-public class ExtentReportListener {
-
-}
+public class ExtentReportListener { }
