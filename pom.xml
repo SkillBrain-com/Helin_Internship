@@ -38,6 +38,7 @@
        			<scope>compile</scope>
      	</dependency>
 
+
         <!-- SLF4j bridge to prevent slfj error message -->
         <dependency>
             <groupId>org.apache.logging.log4j</groupId>

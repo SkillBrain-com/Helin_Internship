@@ -8,7 +8,8 @@
     <!--	</listeners>-->
     <test name="Smoke Test">
         <classes>
-            <!--            <class name="tests.LoginPageContactAppTest">-->
+
+            <!--            <class name="tests.LoginPageContactAppTest">&ndash;&gt;-->
             <!--                <methods>-->
             <!--                    <include name="verifyLogin">-->
             <!--                        <parameter name="username" value="test@yahoo.com"/>-->
@@ -26,95 +27,66 @@
             <!--                    </include>-->
             <!--                </methods>-->
             <!--            </class>-->
+
             <!--            <class name="tests.CreateAccountTest">-->
             <!--                <methods>-->
             <!--                    <include name="createAccountTest">-->
-            <!--                        <parameter name="email" value="dan_test@yahoo.com"/>-->
+            <!--                        <parameter name="email" value="test_catavei@yahoo.com"/>-->
             <!--                        <parameter name="firstname" value="Dana"/>-->
-            <!--                        <parameter name="lastname" value="Catalin"/>-->
+            <!--                        <parameter name="lastname" value="Catavei"/>-->
             <!--                        <parameter name="password" value="InternSh!p2023"/>-->
             <!--                        <parameter name="confPassword" value="InternSh!p2023"/>-->
             <!--                    </include>-->
             <!--                </methods>-->
             <!--            </class>-->
 
-            <class name="tests.SettingCompanyTest">
-                <methods>
-                    <!--                    <include name="verifySettingCompany">-->
-                    <!--                        <parameter name="username" value="daniel_irimia87@yahoo.com"/>-->
-                    <!--                        <parameter name="password" value="pass123456"/>-->
-                    <!--                    </include>-->
-                    <!--                    <include name="modifyCompanyOrganisationType">-->
-                    <!--                        <parameter name="username" value="danytheshark@yahoo.com"/>-->
-                    <!--                        <parameter name="password" value="pass123456"/>-->
-                    <!--                        <parameter name="cnp" value="1720615369745"/>-->
-                    <!--                        <parameter name="entityType" value="Persoană fizică"/>-->
-                    <!--                        <parameter name="firstName" value="Daniel"/>-->
-                    <!--                        <parameter name="lastName" value="Irimia"/>-->
-                    <!--                        <parameter name="country" value="Romania"/>-->
-                    <!--                        <parameter name="county" value="Tulcea"/>-->
-                    <!--                        <parameter name="city" value="Tulcea"/>-->
-                    <!--                        <parameter name="address" value="Str. Principala"/>-->
-                    <!--                        <parameter name="email" value="dantest@yahoo.com"/>-->
-                    <!--                        <parameter name="phone" value="+400751234"/>-->
-                    <!--                    </include>-->
-                    <!--                    <include name="addPeriodOfActivityTVA">-->
-                    <!--                        <parameter name="username" value="daniel_irimia87@yahoo.com"/>-->
-                    <!--                        <parameter name="password" value="pass123456"/>-->
-                    <!--                        <parameter name="startDateVATPeriod" value="10-06-2023"/>-->
-                    <!--                        <parameter name="endDateVATPeriod" value="30-06-2023"/>-->
-                    <!--                    </include>-->
-                    <!--                    <include name="addPeriodOfActivityCIF">-->
-                    <!--                        <parameter name="username" value="daniel_irimia87@yahoo.com"/>-->
-                    <!--                        <parameter name="password" value="pass123456"/>-->
-                    <!--                        <parameter name="CIF" value="12345678990"/>-->
-                    <!--                        <parameter name="registrationDate" value="10-06-2023"/>-->
-                    <!--                        <parameter name="cancellationDate" value="30-06-2023"/>-->
-                    <!--                    </include>-->
-                    <!--                    <include name="addVATRate">-->
-                    <!--                        <parameter name="username" value="daniel_irimia87@yahoo.com"/>-->
-                    <!--                        <parameter name="password" value="pass123456"/>-->
-                    <!--                        <parameter name="VATRate" value="24%"/>-->
-                    <!--                    </include>-->
-                    <!--                    <include name="addNewLocation">-->
-                    <!--                        <parameter name="username" value="daniel_irimia87@yahoo.com"/>-->
-                    <!--                        <parameter name="password" value="pass123456"/>-->
-                    <!--                        <parameter name="locationName" value="Sediul general"/>-->
-                    <!--                        <parameter name="locationCounty" value="Brasov"/>-->
-                    <!--                        <parameter name="locationCity" value="Brasov"/>-->
-                    <!--                        <parameter name="locationAddress" value="Str. Principala Brasov"/>-->
-                    <!--                    </include>-->
-                    <include name="addAuthorizedActivities">
-                        <parameter name="username" value="daniel_irimia87@yahoo.com"/>
-                        <parameter name="password" value="pass123456"/>
-                        <parameter name="activityName" value="Sediul profesional"/>
-                        <parameter name="incomeCategory" value="Drepturi de proprietate intelectuală - sistem real"/>
-                        <parameter name="sourceOfIncome" value="12121323"/>
-                        <parameter name="authorizationNr" value="11223412412"/>
-                        <parameter name="registrationDate" value="10-06-2023"/>
-                        <parameter name="endedDate" value="30-06-2023"/>
-                    </include>
 
+            <class name="tests.FacturaVanzariTest">
+                <methods>
+                    <include name="AdaugaFacturiVanzari">
+
+                        <parameter name="email" value="gabrielajitea77@gmail.com"/>
+                        <parameter name="password" value="Rozaroza69"/>
+                        <parameter name="firstname" value="Gabriela"/>
+                        <parameter name="lastname" value="Turian"/>
+                        <parameter name="CNP" value="2800813204508"/>
+                        <parameter name="tara" value="Romania"/>
+                        <parameter name="judet" value="Hunedoara"/>
+                        <parameter name="localitate" value="Petrosani"/>
+                        <parameter name="adresa" value="ghSincai"/>
+                        <parameter name="salveaza" value="profilSalvat"/>
+                        <parameter name="contAppPs" value="configurare"/>
+                        <parameter name="configurare" value="venituri"/>
+                        <parameter name="venituri" value="venituri"/>
+                        <parameter name="facturiVanzari" value="facturiVanzari"/>
+                        <parameter name="adaugaFacturiVanzari" value="adaugaFacturiVanzari"/>
+                        <parameter name="clienti" value="clienti"/>
+                        <parameter name="alegeClient" value="cfrMarfa"/>
+                        <parameter name="alegeTip" value="factura"/>
+                        <parameter name="serieFactura" value="TGM"/>
+                        <parameter name="numarFactura" value="1"/>
+                        <parameter name="tipArticol" value="bunuri"/>
+                        <parameter name="denumireArticol" value="servicii"/>
+                        <parameter name="cantitate" value="1"/>
+                        <parameter name="pretUnitar" value="500"/>
+                        <parameter name="total" value="500"/>
+                        <parameter name="adaugaArticol" value="adaugaArticol"/>
+                        <parameter name="salveazaSiVezi" value="salveazaSiVezi"/>
+                    </include>
+                </methods>
+                <methods>
+                    <include name="IncasariSiPlati">
+                        <parameter name="incasariSiPlati" value="IncasariSiPlati"/>
+                        <parameter name="incasari" value="incasari"/>
+                        <parameter name="adaugaIncasare" value="adaugaIncasare"/>
+                        <parameter name="client" value="cfrMarfa"/>
+                        <parameter name="valoareIncasata" value="IncasatIntegral"/>
+                        <parameter name="explicatie" value="incasareCfrMarfa"/>
+                        <parameter name="adaugaIncasareNoua" value="adaugaIncasareNoua"/>
+                        <parameter name="deschide" value="editeaza"/>
+                    </include>
                 </methods>
             </class>
-            <!--            			<class name="tests.MyInfoTest" >-->
-            <!--            				<methods>-->
-            <!--            					<include name="login">-->
-            <!--            						<parameter name="username" value="Admin" />-->
-            <!--            						<parameter name="password" value="admin123" />-->
-            <!--            					</include>-->
-            <!--            					<include name="myInfoPage">-->
-            <!--            						<parameter name="name" value="Alex" />-->
-            <!--            						<parameter name="lastname" value="Popoescu" />-->
-            <!--            						<parameter name="license" value="B0938874873" />-->
-            <!--            						<parameter name="nationality" value="Romanian" />-->
-            <!--            						<parameter name="maritalStatus" value="Single" />-->
-            <!--            						<parameter name="gender" value="Male" />-->
-            <!--            						<parameter name="bloodType" value="A+" />-->
-            <!--            						<parameter name="typeOfRunning" value="local" />-->
-            <!--            					</include>-->
-            <!--            				</methods>-->
-            <!--            			</class>-->
         </classes>
     </test>
 

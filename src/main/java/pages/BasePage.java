@@ -1,5 +1,6 @@
 package pages;
 
+import base.PageLinksAndText;
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
 import io.github.bonigarcia.wdm.WebDriverManager;
@@ -11,10 +12,10 @@ import org.testng.Reporter;
 import org.testng.annotations.*;
 
 
+
 public class BasePage {
 
     public static WebDriver driver_local; //--> rulare in mod normal pe local
-    String contactAppUrl = "https://contapp.ro/";
     public static ExtentTest logger;
     public static ExtentReports report;
     
@@ -28,13 +29,14 @@ public class BasePage {
         options.addArguments("--remote-allow-origins=*");
         driver_local = new ChromeDriver(options);
         driver_local.manage().window().maximize();
-        driver_local.get(contactAppUrl);
+        driver_local.get(PageLinksAndText.contactAppUrlLink.getValue());
         context.setAttribute("WebDriver", driver_local);
     }
 
 
     @AfterMethod(alwaysRun=true)
     public void tearDown() {
+
         driver_local.quit();
     }
 
