@@ -275,8 +275,8 @@ public class SingleStatementAddIncome extends BaseTest {
 
     public void clickOpenSummaryEstimatedCorection(int x, int y) {
         javascriptExecutor(x, y);
-//        click(listofButtons(listOfOpenButtons));
-        action(listofButtons(listOfOpenButtons));
+        click(listofButtons(listOfOpenButtons));
+        //action(listofButtons(listOfOpenButtons));
     }
 
     public void clickCloseSummaryEstimatedCorection() {

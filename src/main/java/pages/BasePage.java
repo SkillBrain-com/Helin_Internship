@@ -25,12 +25,13 @@ public class BasePage {
      */
     @BeforeMethod(alwaysRun=true)
     public void setup(ITestContext context) {
-        WebDriverManager.chromedriver().setup();
+        //WebDriverManager.chromedriver().setup();
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--remote-allow-origins=*");
-        driver_local = new ChromeDriver(options);
+        driver_local = new ChromeDriver();
         driver_local.manage().window().maximize();
         driver_local.get(PageLinksAndText.contactAppUrlLink.getValue());
+        driver_local.manage().deleteAllCookies();
         context.setAttribute("WebDriver", driver_local);
     }
 
