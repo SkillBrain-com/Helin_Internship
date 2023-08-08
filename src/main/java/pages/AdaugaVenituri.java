@@ -6,6 +6,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.testng.Assert;
 
+import java.io.IOException;
+
 public class AdaugaVenituri extends BaseTest {
 
     @FindBy(xpath = "/html/body/main/div/div/div/div[2]/div/div/div/div[1]/form/div[5]/button")
@@ -59,13 +61,8 @@ public class AdaugaVenituri extends BaseTest {
     @FindBy(xpath = "//button[@class='btn btn-primary']")
     private WebElement salveaza;
 
-    public void clickCloseCookie() {
-        try {
-            click(closeCookieButton);
-        } catch (Exception e) {
-            System.out.println("Cookie is not displayed");
-        }
-    }
+
+
 
     public void addText(WebElement emailField, String email) {
         addText(emailField, email);

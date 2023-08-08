@@ -11,6 +11,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import pages.BasePage;
 import utils.Utils;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;
@@ -107,6 +108,8 @@ public class BaseTest extends BasePage {
         }
 
         return elem;
+
+
     }
 
     protected WebElement listofButtons(List<WebElement> list) {
@@ -175,6 +178,15 @@ public class BaseTest extends BasePage {
         Set<String> windowHandles = driver.getWindowHandles();
         for (String windowHandle : windowHandles) {
             driver.switchTo().window(windowHandle);
+        }
+    }
+
+    public void clickCloseCookie(WebElement closeCookieButton) throws IOException {
+        try {
+
+            click(closeCookieButton);
+        } catch (Exception e) {
+            throw new IOException("no cookies available");
         }
     }
 }

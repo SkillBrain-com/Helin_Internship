@@ -8,41 +8,30 @@ import org.testng.Assert;
 
 public class LoginPageContactApp extends BaseTest {
 
-    @FindBy(xpath = "//a[normalize-space()='Autentifica-te']")
-    private WebElement authenticationButton;
-
-    @FindBy(xpath = "//input[@id='email']")
-    private WebElement emailField;
-@FindBy(xpath = "'onetrust-close-btn-handler onetrust-close-btn-ui banner-close-button ot-close-icon']")
-private WebElement closeCookieButton;
-    @FindBy(xpath = "//input[@id='password']")
-    private WebElement passwordField;
-
-    @FindBy(id = "remember-me")
-    private WebElement rememberMeCheckbox;
-
-    @FindBy(xpath = "//button[normalize-space()='Autentificare']")
-    private WebElement loginButton;
-
-    @FindBy(xpath = "//label[@for='email']")
-    private WebElement emailAlertMessage;
-
-    @FindBy(xpath = "//label[@for='password']")
-    private WebElement passwordAlertMessage;
-
     @FindBy(xpath = "//a[normalize-space()='Ai uitat parola?']")
     public WebElement forgotPasswordLink;
-    @FindBy(xpath = "//button[@id='onetrust-accept-btn-handler']")
-    private WebElement acceptCookieButton;
-
-
-
-
-
     public String[] expectedAlertMessages = {PageLinksAndText.authenticationErrorMessage.getValue(),
             PageLinksAndText.mandatoryEmailMessage.getValue(),
             PageLinksAndText.mandatoryPasswordMessage.getValue()
     };
+    @FindBy(xpath = "//a[normalize-space()='Autentifica-te']")
+    private WebElement authenticationButton;
+    @FindBy(xpath = "//input[@id='email']")
+    private WebElement emailField;
+    @FindBy(xpath = "'onetrust-close-btn-handler onetrust-close-btn-ui banner-close-button ot-close-icon']")
+    private WebElement closeCookieButton;
+    @FindBy(xpath = "//input[@id='password']")
+    private WebElement passwordField;
+    @FindBy(id = "remember-me")
+    private WebElement rememberMeCheckbox;
+    @FindBy(xpath = "//button[normalize-space()='Autentificare']")
+    private WebElement loginButton;
+    @FindBy(xpath = "//label[@for='email']")
+    private WebElement emailAlertMessage;
+    @FindBy(xpath = "//label[@for='password']")
+    private WebElement passwordAlertMessage;
+    @FindBy(xpath = "//button[@id='onetrust-accept-btn-handler']")
+    private WebElement acceptCookieButton;
 
     public void addEmail(String email) {
 
@@ -84,11 +73,6 @@ private WebElement closeCookieButton;
     }
 
     public void clickCloseCookie() {
-        try {
-
-            click(closeCookieButton);
-        } catch (Exception e) {
-            System.out.println("Cookie is not displayed");
-        }
+        clickCloseCookie();
     }
 }
