@@ -32,9 +32,6 @@ public enum PageLinksAndText {
     messageCart("Produsele din cos au fost sterse!"),
     messageThanksCart("Mulțumim pentru comandă!"),
     textmessage("Mulțumim pentru părere");
-    messageCart("Produsele din cos au fost sterse!"),
-    messageThanksCart("Mulțumim pentru comandă!"),
-    textmessage("Mulțumim pentru părere");
     private final String value;
     PageLinksAndText(String value) {
         this.value = value;
