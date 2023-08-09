@@ -27,8 +27,6 @@ public class ActivitiesAnafPageTest extends BasePage {
         login().clickRememberMeCheckbox();
         login().clickLoginButton();
         activitiesAnafPage().clickButonDocumentatie();
-       // activitiesAnafPage().clickCampdeCautare();
-       // activitiesAnafPage().clickLupadeCautare();
         activitiesAnafPage().getSearchResult(textCampCautare);
         activitiesAnafPage().verifMessage();
 

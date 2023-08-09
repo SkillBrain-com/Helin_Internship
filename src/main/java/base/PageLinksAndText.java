@@ -31,7 +31,7 @@ public enum PageLinksAndText {
     authorizationInvoiceLink("https://ps.contapp.ro/autorizare-efactura/ff3f9b76-99c8-406f-a765-5a52221d2c97"),
     messageCart("Produsele din cos au fost sterse!"),
     messageThanksCart("Mulțumim pentru comandă!"),
-    textmessage("Mulțumim pentru părere?");
+    textmessage("Mulțumim pentru părere.");
     private final String value;
     PageLinksAndText(String value) {
         this.value = value;
